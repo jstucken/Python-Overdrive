@@ -33,7 +33,7 @@ if [ "$USER" != "root" ] && [ "$USER" != "pi" ]; then
 else
 	# must be root or pi user
 	# enter default directory
-	cd /home/pi/DET-Python-Anki-Overdrive/
+	cd /home/pi/Python-Overdrive/
 fi
 
 
@@ -91,25 +91,25 @@ alias help='source /etc/bash.bashrc'
 
 # allows user to control raspi desktop screen brightness
 # uses this package: https://github.com/LordAmit/Brightness
-alias brightness='python3 /home/pi/DET-Python-Anki-Overdrive/shell_scripts/brightness/Brightness-master/src/init.py'
+alias brightness='python3 /home/pi/Python-Overdrive/shell_scripts/brightness/Brightness-master/src/init.py'
 
 # refreshes changes in the /etc/wpa_supplicant/wpa_supplicant.conf file
-alias wifi='/home/pi/DET-Python-Anki-Overdrive/shell_scripts/refresh_wifi.sh'
-alias refresh_wifi='/home/pi/DET-Python-Anki-Overdrive/shell_scripts/refresh_wifi.sh'
+alias wifi='/home/pi/Python-Overdrive/shell_scripts/refresh_wifi.sh'
+alias refresh_wifi='/home/pi/Python-Overdrive/shell_scripts/refresh_wifi.sh'
 
 ############################################################
 ############################################################
 # CUSTOM WELCOME MESSAGES BELOW
-CPU_USAGE=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_cpu.sh`
-DISK_USAGE=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_disk_usage.sh`
-MEM_USAGE=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_mem_usage.sh`
-UPTIME=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_uptime.sh`
-USERS_ONLINE=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_users_online.sh`
-RASP_VERSION=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_rasp_version.sh`
-LOCAL_IP=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_local_ip.sh`
-KERNEL=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_kernel.sh`
-DATE=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_date.sh`
-VERSION=`/home/pi/DET-Python-Anki-Overdrive/shell_scripts/get_version.sh`
+CPU_USAGE=`/home/pi/Python-Overdrive/shell_scripts/get_cpu.sh`
+DISK_USAGE=`/home/pi/Python-Overdrive/shell_scripts/get_disk_usage.sh`
+MEM_USAGE=`/home/pi/Python-Overdrive/shell_scripts/get_mem_usage.sh`
+UPTIME=`/home/pi/Python-Overdrive/shell_scripts/get_uptime.sh`
+USERS_ONLINE=`/home/pi/Python-Overdrive/shell_scripts/get_users_online.sh`
+RASP_VERSION=`/home/pi/Python-Overdrive/shell_scripts/get_rasp_version.sh`
+LOCAL_IP=`/home/pi/Python-Overdrive/shell_scripts/get_local_ip.sh`
+KERNEL=`/home/pi/Python-Overdrive/shell_scripts/get_kernel.sh`
+DATE=`/home/pi/Python-Overdrive/shell_scripts/get_date.sh`
+VERSION=`/home/pi/Python-Overdrive/shell_scripts/get_version.sh`
 
 # define text colours
 green=`tput setaf 10`
