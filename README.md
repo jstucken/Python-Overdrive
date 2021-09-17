@@ -15,7 +15,7 @@ This code is dependent on <a href="https://github.com/IanHarvey/bluepy">bluepy</
 <p>Coming soon.</p>
 
 <h2>Documentation</h2>
-<p>See <code>example.py</code> file.</p>
+<p>See code examples in <code>student_files</code> directory.</p>
 
 <h2>Credits</h2>
 <ul>
