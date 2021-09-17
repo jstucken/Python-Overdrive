@@ -1,0 +1,5 @@
+# Version number of this entire DET Python Anki Library
+# Please don't modify this version number unless you are collaborating
+# with the developer e.g. committing a push request to GitHub
+# as it will be used to synchronise updates and troubleshoot issues etc
+VERSION=1.1

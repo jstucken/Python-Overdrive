@@ -1,0 +1,41 @@
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+
+# The first ALL represents the users allowed to run the command (this can be an individual or group)
+# The second ALL represents the hosts
+# The third ALL is the target (who you are when running the command)
+# The last ALL is the group of commands allowed
+# From: https://www.networkworld.com/article/3237946/building-command-groups-with-sudo.html
+
+# jstucken MOD 20-5-2021
+# allow www-data user to run sudo command without a password prompt
+# this allows the PHP web GUI to create student accounts etc
+# in future, to improve security, this should be locked down to only
+# allow the required commands the web GUI needs.
+# see: https://www.linux.com/training-tutorials/configuring-linux-sudoers-file/
+www-data ALL=NOPASSWD: ALL

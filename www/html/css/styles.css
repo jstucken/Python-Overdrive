@@ -1,0 +1,1226 @@
+/*!
+ * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+ 
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+p {
+  font-size: 20px;
+}
+p.small {
+  font-size: 16px;
+}
+
+.col-lg-3 {
+	width: 25%;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #4768af;
+  text-decoration: underline;
+}
+a:visited {
+	color: #536daf;
+}
+a:hover {
+	color: #4768af;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+.template_box {
+	font-size: 14px;
+	padding: 6px;
+	margin-top: 10px;
+	width: 100%;
+	min-height: 100px;
+}
+.accepted {
+	border: 2px solid green;
+	background-color: #f1fdf1;
+}
+
+.denied {
+	border: 2px solid red;
+	background-color: #fdf1f1;
+}
+
+.comments_box {
+	font-size: 14px;
+	padding: 6px;
+	margin-top: 10px;
+	width: 100%;
+	min-height: 130px;
+}
+
+.blue {
+	background-color: #7e9cff;
+	color: white;
+	font-weight: bold;
+}
+
+
+input[type=button], input[type=submit] {
+	font-weight: bold;
+	font-size: 16px;
+	border: 3px solid black;
+	height: 40px;
+	background-color: #7e9cff;
+	color: white;
+	border-radius: 5px;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+
+	background-color: #666666;
+}
+
+/* special button
+* Dresses up links as pressable buttons
+* added 5-6-2020 */
+.button_link {
+	height: 100px !important;
+	padding: 7px 10px 7px 10px;
+	font-weight: bold;
+	font-size: 16px;
+	border: 3px solid black;
+	height: 40px;
+	background-color: #7e9cff !important;
+	color: white !important;
+	border-radius: 5px;
+	text-decoration: none !important;
+	margin: 5px;
+}
+
+.button_link:hover,
+.button_link:focus,
+.button_link:active {
+	background-color: #666666 !important;
+	text-decoration: none !important;
+}
+
+
+
+
+hr {
+	border-color: #666666;
+}
+	
+	
+hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+
+ /* list of font icons here: */
+ /* http://reportmate.stockpatrol.com.au/reports/ */
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f0a3";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #c6ccda;
+  color: white;
+}
+hr.star-primary {
+  border-color: pink;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #7e9cff;
+}
+.img-centered {
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  background: #c6ccda;
+  color: white;
+}
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+header .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+}
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+.navbar {
+	min-height: 10px;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+
+.navbar-custom {
+  background: #7e9cff;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  font-size: 11px;
+}
+
+.navbar-toggle {
+	padding: 3px;
+	margin: -5px 10px 0 0;
+}
+
+/* Navbar collapsed mobile friendly state */
+.in {
+	background-color: grey;
+}
+
+/* For logged in teachers only */
+.navbar-default .navbar-nav > li > a > span {
+    color: pink;
+    text-decoration: underline;
+    font-size: 11px;
+    padding-top: 10px;
+    transition: 0.3s;
+}
+.navbar-default .navbar-nav > li > a:hover > span {
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #144287;
+  text-decoration: underline;
+  font-size: 11px;
+  padding-top: 10px;
+  transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #ccc !important;
+    transition: 0.3s;
+    color: white !important;
+}
+
+.navbar-custom .navbar-toggle {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-color: white;
+}
+
+/* Use different colours on nav links for Admin users */
+.admin {
+	color: green !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+section {
+  padding: 100px 0;
+}
+section h2 {
+  margin: 0;
+  /* font-size: 3em; */
+}
+section.about {
+  /*background: #c6ccda;*/
+  background: #FFF;
+  color: #333;
+}
+
+section.generic {
+  /*background: #c6ccda;*/
+  background: #FFF;
+  color: #333;
+  padding: 130px 0;
+  border: 1px solid black;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+  }
+  section.first {
+    padding-top: 75px;
+  }
+}
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eeeeee;
+}
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+  -moz-transition: top 0.3s ease,opacity 0.3s ease;
+  -ms-transition: top 0.3s ease,opacity 0.3s ease;
+  transition: top 0.3s ease,opacity 0.3s ease;
+}
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #eeeeee;
+}
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+.floating-label-form-group-with-focus label {
+  color: #c6ccda;
+}
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eeeeee;
+}
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #7e9cff;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #1e5fbe;
+}
+.btn-outline {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #c6ccda;
+  background: white;
+  border: solid 2px white;
+}
+.btn-primary {
+  color: white;
+  background-color: #7e9cff;
+  border-color: #7e9cff;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: #1a242f;
+  border-color: #161f29;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #7e9cff;
+  border-color: #7e9cff;
+}
+.btn-primary .badge {
+  color: #7e9cff;
+  background-color: white;
+}
+.btn-success {
+  color: white;
+  background-color: #c6ccda;
+  border-color: #c6ccda;
+  font-weight: 700;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: white;
+  background-color: #128f76;
+  border-color: #11866f;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #c6ccda;
+  border-color: #c6ccda;
+}
+.btn-success .badge {
+  color: #c6ccda;
+  background-color: white;
+}
+.btn-social {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+.btn:focus,
+.btn:active,
+.btn.active {
+  outline: none;
+}
+.scroll-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+  z-index: 1049;
+}
+.scroll-top .btn {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 28px;
+}
+.scroll-top .btn:focus {
+  outline: none;
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #7e9cff;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #7e9cff;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+/* 
+* Alert messages
+*/
+
+.alert {
+	margin-top: 120px !important;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+
+.btn-default {
+	font-weight: bold;
+}
+
+/* Used to highlight increased stock values on search pages */
+.DESC {
+	color: green;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* Used to highlight decreased stock values on search pages */
+.ASC {
+	color: red;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+/* Style our user forms */
+.form-inline {
+}
+
+.form-dark {
+	border: 3px solid #666666;
+	padding: 10px;
+	background-color:rgba(0, 0, 0, 0.05);
+}
+
+.row-result {
+	padding: 10px;
+	margin: 10px;
+}
+.row-result:nth-child(even) {
+	background-color:rgba(0, 0, 0, 0.05);
+}
+	
+.text-left {
+	font-weight: normal;
+}
+
+
+
+.dec, .loss, .red, .error label {
+	color: red !important;
+}
+
+
+.fa-quote-left:before {
+    content: "\f10d"
+}
+
+.fa-quote-right:before {
+    content: "\f10e"
+}
+
+.market-down .fa.fa-quote,
+.market-down-arrow .fa.fa-quote,
+.market-up .fa.fa-quote,
+.market-up-arrow .fa.fa-quote {
+    display: inline-block
+}
+
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('css/fonts/fontawesome-webfont.eot?v=4.4.0');
+    src: url('css/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('css/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('css/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('css/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('css/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+.fa-arrow-up:before{content:"\f062"}
+
+.market-up, .market-up-arrow {
+	color: #070;
+}
+
+/* font awesome */
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.inc, .gain, .green {
+	color: #02a902 !important;
+}
+
+.black {
+	color: #000 !important;
+}
+
+/* Our Price History Table */
+table.price_history {
+	width: 60%;
+}
+table.price_history th {
+	padding: 3px;
+	background-color: #ccc;
+}
+table.price_history td {
+	padding: 3px;
+}star-primary
+table.price_history tr:nth-child(even) {background: #FFF}
+table.price_history tr:nth-child(odd) {background: #f1f1f1}
+
+/* Server stats table on homepage */
+.medium_table th, .medium_table td {
+	font-size: 19px !important;
+	vertical-align: middle !important;
+	text-align: left;
+}
+
+/* Small table to list cars etc on students page */
+.small_table th, .small_table td {
+	font-size: 11px !important;
+	vertical-align: middle !important;
+	text-align: left;
+	padding: 0 2px 0 2px !important;
+	margin: 0 !important;
+	border: 0px solid black !important;
+	background-color: none !important;
+}
+
+.small_table_cell {
+	vertical-align: middle;
+}
+
+/* General tables used a lot to display reports  */
+.small_text {
+	font-size: 12px !important;
+}
+table.general {
+	margin-left:auto; margin-right:auto;  /* centers the whole table */
+	border-spacing: 5px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #111;
+	font-size: 14px;
+}
+
+table.general th, table.general td {
+	border: 1px solid #666666;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+}
+
+table.general th {
+	font-weight: normal;
+	white-space: nowrap;
+	color: #0b1d44;
+	background-color: #dbdde2;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+table.general tr > th:first-child, table.general tr > td:first-child {
+	/* padding-left: 0; */
+}
+
+/* Table designed to handle lots of columns horizontally on the import screen */
+table.import {
+	border-collapse: separate;
+	margin-left:auto; margin-right:auto;  /* centers the whole table */
+	border-spacing: 5px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #111;
+	font-size: 14px;
+	padding: 10px;
+}
+
+table.import th {
+	color: #0b1d44;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px;
+}
+
+table.import td {
+	font-weight: normal;
+	padding: 10px;
+}
+
+.import_field_headings {
+	background-color: #b3b8c4;
+}
+.import_map_to {
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: 15px;
+	background-color: #f1f1f1;
+}
+
+.import_map_to_data {
+	font-size: 12px;
+	background-color: #ffc;
+}
+
+.import select, .import_text {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+ /* Style traits select boxes */
+.traits {
+	font-size: 14px;
+	padding: 3px;
+}
+
+table.traits th, table.traits td {
+	border: 0;
+	vertical-align: top;
+	text-align: left;
+	padding: 6px;
+}
+
+/* TABS */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+.tab input {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  transition: 0.2s;
+  font-size: 12px;
+}
+
+/* Style the buttons inside the tab */
+.tab input {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Change background color of buttons on hover or when user is on that page ('selected') */
+.tab input:hover, .tab_selected {
+  background-color: #bfe9e1 !important;
+}
+
+/* Create an active/current tablink class */
+.tab input.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+/* Styles the textareas used to modify report templates */
+.template_textarea {
+	min-height: 200px;
+}
+
+
+/* Colour code the tasks within the template text for readbility 
+* Colours picked from: https://htmlcolorcodes.com/color-chart/
+*/
+
+.intro {
+	color: #000 !important;
+}
+.task0 {
+	color: red !important;
+}
+.task1 {
+	color: green !important;
+}
+.task2 {
+	color: blue !important;
+}
+.task3 {
+	color: purple !important;
+}
+.task4 {
+	color: orange !important;
+}
+.task5 {
+	color: grey !important;
+}
+.task6 {
+	color: pink !important;
+}
+.task7 {
+	color: #07dfff !important;
+}
+.outro {
+	color: #000 !important;
+}
+
+
+/* Select field allowing user to override a student grade */
+.custom_grade {
+	font-weight: bold;
+}
+
+li {
+	font-size: 16px;
+}
+
+.large_text {
+	font-size: 18px;
+}
+
+/* User SQL field */
+.user_sql {
+	padding: 10px;
+	width: 100%;
+	height: 70px;
+	border: 2px solid #1e5fbe;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: 'Courier New', monospace;
+	color: #1e5fbe;
+	background-color: #d9e8ff;
+}
+
+.explanatory_text {
+	font-size: 8px;
+}
+
+/* Used for asterix on required fields */
+.required {
+	font-size: 18px;
+	font-weight: bold;
+	color: red !important;
+}
+
+.green {
+	color: green;
+	font-weight: bold;
+}
+
+.red {
+	color: red;
+	font-weight: bold;
+}
+
+/* Styling Checkbox Starts */
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid black;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: white;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 2px solid black;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #009BFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #009BFF;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid black;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);  
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+
+
+/* Style for Circular Checkbox */
+.checkbox-label .checkbox-custom.circular {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.checkbox-label input:checked ~ .checkbox-custom.circular::after {
+    border: solid #0067FF;
+    border-width: 0 2px 2px 0;
+}
+.checkbox-label .checkbox-custom.circular::after {
+    border-radius: 50%;
+}
+
+.checkbox-label .checkbox-custom.circular::before {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom.circular::before {
+    border-radius: 50%;
+}
+
+/* Green and red active/inactive table cells */
+.active {
+	font-weight: bold;
+	background-color: green;
+	color: white;
+	text-align: center !important;
+}
+.inactive {
+	font-weight: bold;
+	background-color: red;
+	color: white;
+	text-align: center !important;
+}
+
+
+/* Style the left nav used on documentation pages etc */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #272727;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav > ul {
+    color: #ababab;
+}
+
+.sidenav > ul > li > a {
+    color: #ababab;
+    margin: 0;
+    padding-left: 0;
+    font-size: 14px;
+}
+.sidenav a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+
+/* Holds the main right hand side content of the documentation pages */
+.docs_main {
+    min-height: 800px;
+    margin-left: 279px;
+    margin-top: 70px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+pre {
+    width: 70%;
+    font-size: 18px;
+}
